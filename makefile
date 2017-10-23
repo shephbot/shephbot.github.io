@@ -1,10 +1,11 @@
+NIK := pipenv run nikola
 deploy:
-	nikola github_deploy
+	$(NIK) github_deploy
 
 build:
-	pipenv run nikola build
-	pipenv run nikola serve -b
+	$(NIK) build
+	$(NIK) serve -b
 
 setup:
 	MACOSX_DEPLOYMENT_TARGET=10.11 pipenv install "Nikola[extras]"
-	pipenv run nikola init root
+	$(NIK) init root

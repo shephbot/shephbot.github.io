@@ -1367,7 +1367,8 @@ GLOBAL_CONTEXT = {
     'TWITTER_URL': 'https://twitter.com/shephbot',
     'GITHUB_URL': 'https://github.com/shephbot',
     'FACEBOOK_URL': 'https://facebook.com/shephbot',
-    'BANNER_URL': '/assets/img/silk-road.jpg'
+    'BANNER_URL': '/assets/img/silk-road.jpg',
+    'privacy_url': '/pages/privacy'
 }
 
 
