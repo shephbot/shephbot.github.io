@@ -1,0 +1,4 @@
+Sitemap: https://shephbot.com/sitemapindex.xml
+
+User-Agent: *
+Host: shephbot.com
