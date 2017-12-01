@@ -1,8 +1,7 @@
 SHELL := /bin/bash
 NIK := nikola #
 
-# start_shell:
-# 	pipenv shell
+# YOU MUST RUN pipenv shell before starting your work.
 
 serve: build
 	$(NIK) serve -b
@@ -13,6 +12,9 @@ build:
 auto_build:
 	nikola auto -b
 
+# ---------------------------------------------------------------------------- #
+# To deply call `make deploy` and give the shephbot github account information #
+# ---------------------------------------------------------------------------- #
 deploy:
 	pipenv run $(NIK) github_deploy
 
