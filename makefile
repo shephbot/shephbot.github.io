@@ -13,7 +13,8 @@ auto_build:
 	nikola auto -b
 
 # ---------------------------------------------------------------------------- #
-# To deply call `make deploy` and give the shephbot github account information #
+# To deploy call `make deploy` and give the shephbot's github account
+# information. Even to push changes is done through deployment.
 # ---------------------------------------------------------------------------- #
 deploy:
 	pipenv run $(NIK) github_deploy
