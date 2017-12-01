@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-NIK := nikola # pipenv run
+NIK := nikola #
 
 # start_shell:
 # 	pipenv shell
@@ -14,7 +14,7 @@ auto_build:
 	nikola auto -b
 
 deploy:
-	$(NIK) github_deploy
+	pipenv run $(NIK) github_deploy
 
 setup:
 	MACOSX_DEPLOYMENT_TARGET=10.11 pipenv install "Nikola[extras]"
